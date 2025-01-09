@@ -1,0 +1,80 @@
+*, body, h1, nav, div, li{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#body{
+    margin: 0;
+    background-color: rgb(253, 252, 244);
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+nav{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+nav > h1{
+    font-size: 2rem;
+}
+.mainLayout{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 5px;
+    height: 80%;
+}
+
+#projects{
+    border-radius: 25px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(253, 188, 255, 0.3);
+}
+.projectControl, .wrapper{
+    display: grid;
+    grid-template-columns: 3fr 0.5fr 0.5fr;
+    gap: 5px;
+}
+
+#tasks{
+
+    border-radius: 25px;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgba(252, 155, 255, 0.3);
+}
+
+li{
+    list-style: none;
+}
+#projectBtn, .button{
+    margin: 5px;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 25px;
+    border:solid gray 1px;
+    background-color: rgba(16, 19, 206, 0.178);
+}
+
+.wrapper{
+    cursor: pointer;
+    margin: 5px;
+
+}
+
+.taskWrapper{
+    background-color: rgb(243, 192, 192);
+    display: flex;
+   margin: 5px;
+   width: 300px;
+  
+}
+
+.taskWrapper:hover{
+    cursor: pointer;
+}
+.data{
+    display: flex;}

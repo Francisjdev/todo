@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Todo List</title>
+</head>
+<body id="body">
+        <nav>
+            <h1>todo list just for console </h1>
+        </nav>
+        <div class="mainLayout">
+            <section id="projects">
+                <div class="projectControl">
+                    <h1>Projects</h1>
+                    <button id="projectBtn">
+                        New project
+                    </button>
+                </div>
+              
+                <div class="projectDisplayArea">
+
+                </div>
+              </section>
+              <section id="tasks">
+                <div>
+                    <div class="todoControl">
+                        <h1>Tasks</h1>
+                        <button id="todoBtn">
+                            New To-do
+                        </button>
+                    </div>
+                   
+                    <div class="taskDisplay">
+                        
+                    </div>
+                </div>
+
+
+              </section>
+              <section id="formDisplays">
+
+              </section>
+
+             
+        </div>
+
+        <dialog class="modal">
+            <form action=" " class="form" method="dialog">
+                <div class=" nombreProyecto">
+                    <label for="nombreProyecto">Nombre proyecto: </label>
+                    <input type="text" name="nombreProyecto" id="nombreProyecto" placeholder="" required />
+                </div>
+                <div class="tipoProjecto">
+                    <label for="tipoProjecto">Tipo Proyecto: </label>
+                    <input type="text" name="tipoProjecto" id="tipoProjecto" placeholder="Vacaciones/Trabajo/Fitness/etc"  required />
+                </div>
+                <div class="input button" id="addProjectBtn">
+                    <input type="submit" value="Add to my library!!" />
+                
+                </div>
+                <div class="close button" id="closeprojectBtn">
+                    <input type="submit" value="Close window!!" />
+                </div>
+            </form>
+        </dialog>
+
+        <dialog class="todoModal">
+            <form action=" " class="form" method="dialog">
+                <div class=" no">
+                    <label for="nombreTarea">Nombre: </label>
+                    <input type="text" name="nombreTarea" id="nombreTarea" placeholder="" required />
+                </div>
+                <div class="fecha">
+                    <label for="fecha">Fecha  </label>
+                    <input type="date" name="fecha" id="fecha" placeholder="fecha"  required />
+                </div>
+                <div class="descripcion">
+                    <label for="descripcion"> Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="descripcion"  required />
+                </div>
+                <div class="projecto">
+                    <label for="projecto">Tipo Proyecto: </label>
+                    <select name="select" id="select">
+
+                    </select>
+                 
+                </div>
+
+                <div class="input button" id="addTareaBtn">
+                    <input type="submit" value="Add to my library!!" />
+                
+                </div>
+                <div class="close button" id="closeTareaBtn">
+                    <input type="submit" value="Close window!!" />
+                </div>
+            </form>
+        </dialog>
+
+</body>
+</html>
